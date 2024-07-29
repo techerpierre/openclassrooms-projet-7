@@ -1,0 +1,28 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery > .content {
+    background-color: var(--gray-color);
+    border-radius: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+@media (max-width: 900px) {
+    .gallery > .content {
+        background: none;
+        padding: 0;
+        gap: 27px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery > .content > * {
+        width: 100%;
+    }
+}

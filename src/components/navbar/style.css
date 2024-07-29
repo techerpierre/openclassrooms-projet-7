@@ -1,0 +1,43 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar > .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > .content > .logo {
+    height: 68px;
+}
+
+.navbar > .content > .links {
+    display: flex;
+    gap: 57px;
+}
+
+.navbar > .content > .links > a {
+    font-size: 24px;
+}
+
+.navbar > .content > .links > .current {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .navbar > .content > .logo {
+        height: 47px;
+    }
+
+    .navbar > .content > .links {
+        display: flex;
+        gap: 26px;
+    }
+
+    .navbar > .content > .links > a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,11 @@
+export { default as Carrousel } from "./carrousel/component";
+export { default as Dropdown } from "./dropdown/component";
+export { default as Footer } from "./footer/component";
+export { default as Gallery } from "./gallery/component";
+export { default as Hero } from "./hero/component";
+export { default as Loader } from "./loader/component";
+export { default as Navbar } from "./navbar/component";
+export { default as Stars } from "./stars/components";
+export { default as Tag } from "./tag/component";
+export { default as Thumb } from "./thumb/component";
+export { default as ThumbProfile } from "./thumb-profile/component";

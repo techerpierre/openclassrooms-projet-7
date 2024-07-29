@@ -1,0 +1,22 @@
+.tag {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    min-width: 115px;
+}
+
+.tag > p {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .tag {
+        min-width: 84px;
+    }
+    .tag > p {
+        font-size: 10px;
+    }
+}

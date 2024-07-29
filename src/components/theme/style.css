@@ -1,0 +1,39 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: #FF6060;
+  --black-color: #000;
+  --gray-color: #F6F6F6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.max-layout {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px !important;
+}
+
+.screen-height {
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    padding: 45px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 27px;
+        gap: 27px;
+    }
+}

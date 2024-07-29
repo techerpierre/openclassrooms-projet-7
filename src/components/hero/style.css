@@ -1,0 +1,66 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    height: 223px;
+}
+
+.hero > .content {
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero > .content > .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero > .content > .title > h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.hero > .content > .title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    opacity: 60%;
+    z-index: -1;
+}
+
+.hero > .content > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        height: 111px;
+    }
+    .hero > .content {
+        border-radius: 10px;
+    }
+
+    .hero > .content > .title {
+        justify-content: flex-start;
+        padding: 27px;
+    }
+
+    .hero > .content > .title > h1 {
+        font-size: 24px;
+    }
+}

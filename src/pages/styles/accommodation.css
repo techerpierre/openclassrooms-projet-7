@@ -1,0 +1,81 @@
+.accomodation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.accomodation-page .infos > .global-infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accomodation-page .infos > .global-infos > .main-infos > h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.accomodation-page .infos > .global-infos > .main-infos > p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.accomodation-page .infos > .global-infos > .tags {
+    display: flex;
+    align-self: flex-start;
+    gap: 15px;
+}
+
+.accomodation-page .infos > .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.accomodation-page .dropdowns {
+    display: flex;
+    gap: 50px;
+}
+
+.accomodation-page .dropdowns > * {
+    flex: 1;
+}
+
+@media (max-width: 900px) {
+    .infos {
+        flex-direction: column;
+    }
+
+    .accomodation-page .infos > .global-infos > .main-infos > h1 {
+        font-size: 18px;
+    }
+
+    .accomodation-page .infos > .global-infos > .main-infos > p {
+        font-size: 14px;
+    }
+
+    .accomodation-page .dropdowns {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .accomodation-page .infos > .details {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

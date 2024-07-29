@@ -1,0 +1,71 @@
+.dropdown {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.dropdown > .content > .header {
+    padding: 10px 20px 10px 15px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown > .content > .header > h3 {
+    color: white;
+}
+
+.dropdown > .content > .header > .status-indicator {
+    height: 13px;
+    transition: all .3s ease;
+}
+
+.dropdown > .content > .header > .status-indicator.active {
+    transform: rotate(-180deg);
+}
+
+.dropdown > .content > .children {
+    position: relative;
+    padding: 0 25px;
+    border-radius: 5px;
+    background-color: var(--gray-color);
+    height: 0px;
+    transition: all .2s ease;
+    transform-origin: top left;
+}
+
+.dropdown > .content > .children.active {
+    animation: open .2s ease;
+    height: fit-content;
+    padding: 25px;
+}
+
+.dropdown > .content > .children > * {
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.dropdown > .content > .children.active > * {
+    opacity: 1;
+}
+
+
+@keyframes open {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@media (max-width: 900px) {
+    .dropdown > .content > .header {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,41 @@
+.thumb {
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumb > .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(#00000000, #00000050);
+    position: relative;
+    z-index: 1;
+}
+
+.thumb > .content > h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+@media (max-width: 900px) {
+    .thumb {
+        height: 255px;
+    }
+}

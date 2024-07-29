@@ -1,0 +1,16 @@
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.stars > img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 900px) {
+    .stars > img {
+        width: 13px;
+        height: 13px;
+    }
+}

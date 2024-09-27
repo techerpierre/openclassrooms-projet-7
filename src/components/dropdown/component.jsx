@@ -11,12 +11,12 @@ const Dropdown = ({ summary, children }) => {
     }
 
     return <section className="dropdown">
-        <div className="max-layout content">
-            <div className="header" onClick={() => toggleIsOpen()}>
+        <div className="max-layout dropdown__content">
+            <div className="dropdown__header" onClick={() => toggleIsOpen()}>
                 <h3>{ summary }</h3>
-                <img src="/arrow_up.svg" className={`status-indicator ${isOpen? "active" : ""}`} />
+                <img src="/arrow_up.svg" className={`dropdown__status-indicator ${isOpen? "dropdown_active" : ""}`} />
             </div>
-            <div className={`children ${isOpen? "active" : ""}`}>{ children }</div>
+            <div className={`dropdown_children ${isOpen? "dropdown_active" : ""}`}>{ children }</div>
         </div>
     </section>
 }

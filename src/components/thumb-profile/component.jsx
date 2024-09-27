@@ -3,11 +3,11 @@ import "./style.css";
 
 const ThumbProfile = ({src, alt, name}) => {
     return <div className="thumb-profile">
-        <div className="name">
-            <p>{ name?.split(" ")[0] }</p>
-            <p>{ name?.split(" ")[1] }</p>
+        <div className="thumb-profile__name">
+            <p className="thumb-profile__label">{ name?.split(" ")[0] }</p>
+            <p className="thumb-profile__label">{ name?.split(" ")[1] }</p>
         </div>
-        <img src={src} alt={alt} />
+        <img className="thumb-profile__image" src={src} alt={alt} />
     </div>
 }
 

@@ -41,18 +41,18 @@ export default function Accommodation() {
                 <Carrousel images={accomodation?.pictures}/>
             )}
             <section className="infos max-layout">
-                <div className="global-infos">
-                    <div className="main-infos">
+                <div className="infos__global">
+                    <div className="infos__main">
                         <h1>{ isLoading || err? <Loader/> : accomodation?.title }</h1>
                         <p>{ isLoading || err? <Loader/> : accomodation?.location }</p>
                     </div>
-                    <div className="tags">
+                    <div className="infos__tags">
                         {isLoading || err? <Loader/> : accomodation?.tags.map((tag, index) => (
                             <Tag key={index}>{ tag }</Tag>
                         ))}
                     </div>
                 </div>
-                <div className="details">
+                <div className="infos__details">
                     <ThumbProfile 
                         src={isLoading || err? "/profile_placeholder.png" : accomodation?.host.picture} 
                         alt={`Photo de profile de ${accomodation?.host?.name}`}

@@ -3,13 +3,13 @@
     gap: 5px;
 }
 
-.stars > img {
+.stars__image {
     width: 24px;
     height: 24px;
 }
 
 @media (max-width: 900px) {
-    .stars > img {
+    .stars__image {
         width: 13px;
         height: 13px;
     }

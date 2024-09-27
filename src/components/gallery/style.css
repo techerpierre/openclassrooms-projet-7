@@ -3,7 +3,7 @@
     justify-content: center;
 }
 
-.gallery > .content {
+.gallery__content {
     background-color: var(--gray-color);
     border-radius: 25px;
     padding: 50px;
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 900px) {
-    .gallery > .content {
+    .gallery__content {
         background: none;
         padding: 0;
         gap: 27px;
@@ -22,7 +22,7 @@
         align-items: center;
     }
 
-    .gallery > .content > * {
+    .gallery__content > * {
         width: 100%;
     }
 }

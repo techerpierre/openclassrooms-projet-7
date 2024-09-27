@@ -4,13 +4,13 @@
     height: 223px;
 }
 
-.hero > .content {
+.hero__content {
     border-radius: 25px;
     overflow: hidden;
     position: relative;
 }
 
-.hero > .content > .title {
+.hero__title {
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,12 +20,12 @@
     overflow: hidden;
 }
 
-.hero > .content > .title > h1 {
+.hero__title > h1 {
     color: #fff;
     font-size: 48px;
 }
 
-.hero > .content > .title::before {
+.hero__title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@
     z-index: -1;
 }
 
-.hero > .content > img {
+.hero__image {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,16 +51,16 @@
     .hero {
         height: 111px;
     }
-    .hero > .content {
+    .hero__content {
         border-radius: 10px;
     }
 
-    .hero > .content > .title {
+    .hero__title {
         justify-content: flex-start;
         padding: 27px;
     }
 
-    .hero > .content > .title > h1 {
+    .hero__title > h1 {
         font-size: 24px;
     }
 }

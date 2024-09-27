@@ -3,9 +3,9 @@ import "./style.css";
 
 const Thumb = ({ title, src, alt }) => {
     return <article className="thumb">
-        <img src={src} alt={alt} />
-        <div className="content">
-            <h3>{ title}</h3>
+        <img className="thumb__image" src={src} alt={alt} />
+        <div className="thumb__content">
+            <h3 className="thumb__title">{title}</h3>
         </div>
     </article>
 }

@@ -1,13 +1,13 @@
 .thumb {
     width: 100%;
-    height: 340px;
+    aspect-ratio: 1;
     border-radius: 10px;
     background-color: var(--primary-color);
     position: relative;
     overflow: hidden;
 }
 
-.thumb > img {
+.thumb__image {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     object-fit: cover;
 }
 
-.thumb > .content {
+.thumb__content {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -28,7 +28,7 @@
     z-index: 1;
 }
 
-.thumb > .content > h3 {
+.thumb__title {
     color: white;
     font-size: 18px;
     font-weight: 700px;

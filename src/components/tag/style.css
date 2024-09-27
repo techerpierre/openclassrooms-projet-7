@@ -5,7 +5,7 @@
     min-width: 115px;
 }
 
-.tag > p {
+.tag__label {
     font-size: 14px;
     font-weight: 700;
     text-align: center;
@@ -16,7 +16,7 @@
     .tag {
         min-width: 84px;
     }
-    .tag > p {
+    .tag__label {
         font-size: 10px;
     }
 }

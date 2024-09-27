@@ -3,7 +3,7 @@ import "./style.css";
 
 const Tag = ({ children }) => {
     return <div className="tag">
-        <p>{ children }</p>
+        <p className="tag__label">{ children }</p>
     </div>
 }
 

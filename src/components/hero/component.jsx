@@ -3,9 +3,9 @@ import "./style.css";
 
 const Hero = ({ src, alt, title }) => {
     return <header className="hero">
-        <div className="max-layout content">
-            <img src={src} alt={alt} />
-            <div className="title">
+        <div className="max-layout hero__content">
+            <img className="hero__image" src={src} alt={alt} />
+            <div className="hero__title">
                 <h1>{ title }</h1>
             </div>
         </div>

@@ -3,7 +3,7 @@ import "./style.css";
 
 const Gallery = ({ children }) => {
     return <section className="gallery">
-        <div className="max-layout content">{ children }</div>
+        <div className="max-layout gallery__content">{ children }</div>
     </section>
 }
 

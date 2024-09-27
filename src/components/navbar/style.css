@@ -4,40 +4,40 @@
     justify-content: center;
 }
 
-.navbar > .content {
+.navbar__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar > .content > .logo {
+.navbar__logo {
     height: 68px;
 }
 
-.navbar > .content > .links {
+.navbar__links {
     display: flex;
     gap: 57px;
 }
 
-.navbar > .content > .links > a {
+.navbar__link {
     font-size: 24px;
 }
 
-.navbar > .content > .links > .current {
+.navbar_current {
     text-decoration: underline;
 }
 
 @media (max-width: 900px) {
-    .navbar > .content > .logo {
+    .navbar__logo {
         height: 47px;
     }
 
-    .navbar > .content > .links {
+    .navbar__links {
         display: flex;
         gap: 26px;
     }
 
-    .navbar > .content > .links > a {
+    .navbar__links > a {
         font-size: 12px;
     }
 }

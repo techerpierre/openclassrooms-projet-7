@@ -1,9 +1,9 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
+import PropTypes, { element } from "prop-types";
 import "./style.css";
+import Loader from "../loader/component";
 
-const Dropdown = ({ summary, children }) => {
-
+const Dropdown = ({ summary, data, loading = false }) => {    
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleIsOpen = () => {
@@ -12,18 +12,39 @@ const Dropdown = ({ summary, children }) => {
 
     return <section className="dropdown">
         <div className="max-layout dropdown__content">
-            <div className="dropdown__header" onClick={() => toggleIsOpen()}>
+            <div className="dropdown__header" onClick={() => !loading && toggleIsOpen()}>
                 <h3>{ summary }</h3>
-                <img src="/arrow_up.svg" className={`dropdown__status-indicator ${isOpen? "dropdown_active" : ""}`} />
+                {
+                    loading ? <Loader/> : (
+                        <img src="/arrow_up.svg" className={`dropdown__status-indicator ${isOpen? "dropdown_active" : ""}`} />
+                    )
+                }
             </div>
-            <div className={`dropdown_children ${isOpen? "dropdown_active" : ""}`}>{ children }</div>
+            {
+                !loading ? (
+                    <div className={`dropdown_children ${isOpen? "dropdown_active" : ""}`}>{
+                        Array.isArray(data) ? (
+                            <li className="dropdown_children__list">
+                                {
+                                    data.map((item, index) => (
+                                        <ul key={index}>{ item }</ul>
+                                    ))
+                                }
+                            </li>
+                        ) : (
+                            <p>{ data }</p>
+                        )
+                    }</div>
+                ) : undefined
+            }
         </div>
     </section>
 }
 
 Dropdown.prototype = {
     summary: PropTypes.string,
-    children: PropTypes.children,
+    children: PropTypes.string | PropTypes.arrayOf(PropTypes.string),
+    loading: PropTypes.bool,
 }
 
 export default Dropdown;

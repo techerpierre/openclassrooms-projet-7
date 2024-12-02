@@ -14,6 +14,7 @@
     border-radius: 5px;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
 .dropdown__header > h3 {
@@ -52,6 +53,11 @@
 
 .dropdown_children.dropdown_active > * {
     opacity: 1;
+}
+
+.dropdown_children__list {
+    display: flex;
+    flex-direction: column;
 }
 
 

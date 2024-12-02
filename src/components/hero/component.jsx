@@ -6,7 +6,7 @@ const Hero = ({ src, alt, title }) => {
         <div className="max-layout hero__content">
             <img className="hero__image" src={src} alt={alt} />
             <div className="hero__title">
-                <h1>{ title }</h1>
+                { title ? <h1>{ title }</h1> : undefined }
             </div>
         </div>
     </header>

@@ -23,6 +23,8 @@
 .hero__title > h1 {
     color: #fff;
     font-size: 48px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }
 
 .hero__title::before {

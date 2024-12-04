@@ -24,13 +24,13 @@ const Dropdown = ({ summary, data, loading = false }) => {
                 !loading ? (
                     <div className={`dropdown_children ${isOpen? "dropdown_active" : ""}`}>{
                         Array.isArray(data) ? (
-                            <li className="dropdown_children__list">
+                            <ul className="dropdown_children__list">
                                 {
                                     data.map((item, index) => (
-                                        <ul key={index}>{ item }</ul>
+                                        <li key={index}>{ item }</li>
                                     ))
                                 }
-                            </li>
+                            </ul>
                         ) : (
                             <p>{ data }</p>
                         )

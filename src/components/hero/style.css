@@ -23,8 +23,9 @@
 .hero__title > h1 {
     color: #fff;
     font-size: 48px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+    paint-order: stroke;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
 }
 
 .hero__title::before {
